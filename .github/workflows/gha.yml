@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag Docker_Hub_Username/demoproj:1.16.3
+      run: docker build . --file Dockerfile --tag ccoane/demoproj:1.16.3
       
     - name: Docker Push
-      run: docker push Docker_Hub_Username/demoproj:1.16.3
+      run: docker push ccoane/demoproj:1.16.3
